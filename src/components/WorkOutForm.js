@@ -18,7 +18,7 @@ function WorkOutForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     // fetch returns a Promise, we must await it
-    const response = await fetch("/workouts", {
+    const response = await fetch("https://serenity-server.onrender.com/workouts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
