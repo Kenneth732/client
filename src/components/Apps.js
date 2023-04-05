@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     // auto-login
-    fetch("/me").then((r) => {
+    fetch("https://serenity-server.onrender.com/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }
