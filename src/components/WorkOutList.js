@@ -9,7 +9,7 @@ function WorkOutList() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch("/workouts")
+    fetch("https://serenity-server.onrender.com/workouts")
       .then((r) => r.json())
       .then((workouts) => {
         setWorkouts(workouts);
