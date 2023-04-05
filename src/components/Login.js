@@ -7,8 +7,7 @@ function Login({ setUser }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-      fetch("https://serenity-strengths.onrender.com/login", {
-//     fetch("/login", {
+    fetch("https://serenity-server.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
